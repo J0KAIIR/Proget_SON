@@ -1,8 +1,8 @@
 /* reglage generaux*/
 
 @font-face {
-    font-family: 'police1';
-    src: url('./police1.ttf');
+    font-family: 'blacky';
+    src: url('./Blacky.ttf');
 }
 
 
@@ -12,37 +12,47 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-
+--color-orange: #F97300;
+--color-creme: #F6EEC9;  
+--color-vertclair: #A1DD70;
+--color-vertfonce: #799351;
 }
 
 body {
 
     font-family: sans-serif;
 
+    background-color:var(--color-creme) ;
+
 }
 
 h1 {
 
-    color: #733fff;
+    color: var(--color-vertfonce-);
 
     font-size: 2.5rem;
     
     font-family: 'police1';
 
+    text-shadow: black 3px;
+
+}
+
+h3 {
+
+    color: var(--color-vertclair);
+
+    margin-top: 10px;
+
 }
 
 div {
 
-background-color: rgb(78, 0, 151);
+width: 100vw;
 
 }
 
 /* reglage header*/
-
-
-
-
-
 
 
 
@@ -54,36 +64,59 @@ background-color: rgb(78, 0, 151);
 
     justify-content: center;
 
-    /*align-items: ;*/
-
-    background-color: black;
-
     color: #ffffff;
 
     height: 25vh;
 
     width: 100vw;
 
-}
+    color: var(--color-orange);
 
+    border: var(--color-vertclair) solid 7px;
 
-#header-titre {
-
-width: 50vw;
-
-}
-
-#header-login {
-
-    width: 25vw;
+    background-color: var(--color-creme);
 
 }
 
 #logo {
     
-    height: 25VH;
+    height: 23vh;
+    margin-top: 5px;
 
 }
+
+
+#header-logo {
+
+width: 25vw;
+
+}
+
+#header-titre {
+
+width: 50vw;
+display: flex;
+flex-direction: column;
+justify-content: center ;
+align-items: center;
+color: var(--color-vertclair);
+}
+
+#header-login {
+
+    width: 25vw;
+    margin-top: 43px;
+    border: var(--color-orange) solid 3px;
+    border-radius: 5px;
+    padding: 10px;  
+    height:fit-content;
+    color: var(--color-orange);
+    background-color: rgb(255, 224, 236);
+    margin-right: 50px;
+
+}
+
+
 
 /* mise en forme du formulaire*/
 
@@ -93,4 +126,74 @@ input, label {
 
     margin-top: 3px;
 
+        width: 100%;
 }
+
+#header-bas {  
+
+    width: 100vw;
+    height: 10vh;
+    background-image: url(../assets/bibliotheque.jpg);
+    border-bottom: var(--color-orange) solid 7px;
+
+}
+
+/*partie centrale*/
+
+#central {
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: start;
+background-color:  rgb(255, 224, 236);
+
+
+
+}
+
+/*menu*/
+
+nav {
+margin-top: 8px;
+margin-left: 8px;
+width: 20vw;
+height: 60vh;
+background-color: var(--color-creme);
+border-radius: 25px 25px 25px 25px;
+border: solid var(--color-orange) 5px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+
+
+}
+
+.bouton {
+
+text-decoration: none;
+color: var(--color-beige);
+text-align: center;
+display: block;
+padding: 20px;
+background-color: rgb(255, 224, 236);
+border: var(--color-orange) solid 2px;
+font-weight: 600;
+font-size: 1.2rem;
+border-radius: 10%;
+width: 60%;
+
+transition: background-color 300ms, border 300ms;
+
+}
+
+.bouton:hover {
+
+background-color: var(--color-vertclair);
+
+
+
+}
+
+/*le choix de site*/
