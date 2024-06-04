@@ -12,23 +12,23 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
---color-orange: #F97300;
---color-creme: #F6EEC9;  
---color-vertclair: #A1DD70;
---color-vertfonce: #799351;
+--color-bleutresclair: #EEF7FF;
+--color-bleuclair: #CDE8E5;  
+--color-bleumoyen: #7AB2B2;
+--color-bleufonce: #4D869C;
 }
 
 body {
 
     font-family: sans-serif;
 
-    background-color:var(--color-creme) ;
+    background-color:var(--color-bleutresclair) ;
 
 }
 
 h1 {
 
-    color: var(--color-vertfonce-);
+    color: var(--color-bleumoyen);
 
     font-size: 2.5rem;
     
@@ -40,7 +40,7 @@ h1 {
 
 h3 {
 
-    color: var(--color-vertclair);
+    color: var(--color-bleumoyen);
 
     margin-top: 10px;
 
@@ -70,11 +70,9 @@ width: 100vw;
 
     width: 100vw;
 
-    color: var(--color-orange);
+    color: var(--color-bleufonce);
 
-    border: var(--color-vertclair) solid 7px;
-
-    background-color: var(--color-creme);
+    border: var(--color-bleumoyen) solid 7px;
 
 }
 
@@ -99,19 +97,19 @@ display: flex;
 flex-direction: column;
 justify-content: center ;
 align-items: center;
-color: var(--color-vertclair);
+color: var(--color-bleuclair);
 }
 
 #header-login {
 
     width: 25vw;
     margin-top: 43px;
-    border: var(--color-orange) solid 3px;
+    border: var(--color-bleuclair) solid 5px;
     border-radius: 5px;
     padding: 10px;  
     height:fit-content;
-    color: var(--color-orange);
-    background-color: rgb(255, 224, 236);
+    color: var(--color-bleuclair);
+    background-color: var(--color-bleufonce);
     margin-right: 50px;
 
 }
@@ -134,7 +132,7 @@ input, label {
     width: 100vw;
     height: 10vh;
     background-image: url(../assets/bibliotheque.jpg);
-    border-bottom: var(--color-orange) solid 7px;
+    border-bottom: var(--color-bleumoyen) solid 7px;
 
 }
 
@@ -146,7 +144,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: start;
-background-color:  rgb(255, 224, 236);
+background-color: var(--color-bleuclair);
 
 
 
@@ -154,14 +152,14 @@ background-color:  rgb(255, 224, 236);
 
 /*menu*/
 
-nav {
+nav {   
 margin-top: 8px;
 margin-left: 8px;
 width: 20vw;
 height: 60vh;
-background-color: var(--color-creme);
+background-color: var(--color-bleutresclair);
 border-radius: 25px 25px 25px 25px;
-border: solid var(--color-orange) 5px;
+border: solid var(--color-bleumoyen) 5px;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
@@ -177,20 +175,21 @@ color: var(--color-beige);
 text-align: center;
 display: block;
 padding: 20px;
-background-color: rgb(255, 224, 236);
-border: var(--color-orange) solid 2px;
+background-color:white;
+border: var(--color-bleumoyen) solid 2px;
 font-weight: 600;
 font-size: 1.2rem;
 border-radius: 10%;
 width: 60%;
 
-transition: background-color 300ms, border 300ms;
+transition: background-color 300ms, color 300ms;
 
 }
 
 .bouton:hover {
 
-background-color: var(--color-vertclair);
+background-color: var(--color-bleufonce);
+color: var(--color-bleutresclair);
 
 
 
